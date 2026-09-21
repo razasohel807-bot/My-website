@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<title>Indian Progressive School</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Poppins,sans-serif;
+background:#f5f7fb;
+color:#172033;
+}
+
+/* HEADER */
+
+header{
+background:linear-gradient(135deg,#071952,#0b3d91);
+color:white;
+text-align:center;
+padding:30px 15px;
+}
+
+.school-name{
+font-family:"Playfair Display",serif;
+font-size:clamp(32px,8vw,62px);
+font-weight:800;
+letter-spacing:1px;
+text-shadow:0 3px 10px rgba(0,0,0,.3);
+}
+
+.tagline{
+margin-top:8px;
+font-size:14px;
+opacity:.9;
+}
+
+/* NAV */
+
+nav{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+box-shadow:0 3px 15px rgba(0,0,0,.12);
+}
+
+.nav{
+display:flex;
+gap:5px;
+padding:10px;
+overflow-x:auto;
+}
+
+.nav a{
+text-decoration:none;
+color:#071952;
+font-weight:600;
+font-size:13px;
+padding:9px 14px;
+border-radius:20px;
+white-space:nowrap;
+}
+
+.nav a:hover{
+background:#071952;
+color:white;
+}
+
+/* HERO */
+
+.hero{
+min-height:520px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px 20px;
+color:white;
+
+background:
+linear-gradient(
+rgba(7,25,82,.80),
+rgba(11,61,145,.85)
+),
+url("https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1400&q=80");
+
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-family:"Playfair Display",serif;
+font-size:clamp(38px,9vw,68px);
+margin-bottom:18px;
+}
+
+.hero p{
+max-width:700px;
+line-height:1.8;
+margin:auto;
+font-size:15px;
+}
+
+.btn{
+display:inline-block;
+background:white;
+color:#071952;
+text-decoration:none;
+padding:13px 25px;
+border-radius:30px;
+font-weight:700;
+margin-top:25px;
+}
+
+/* SECTIONS */
+
+section{
+padding:65px 18px;
+}
+
+.section-title{
+text-align:center;
+font-family:"Playfair Display",serif;
+font-size:36px;
+color:#071952;
+margin-bottom:40px;
+}
+
+.section-title:after{
+content:"";
+display:block;
+width:65px;
+height:4px;
+background:#f4b400;
+margin:10px auto;
+border-radius:5px;
+}
+
+/* ABOUT */
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+color:#667085;
+}
+
+/* CARDS */
+
+.cards{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:#071952;
+margin:12px 0;
+}
+
+.card p{
+color:#667085;
+font-size:14px;
+line-height:1.7;
+}
+
+.icon{
+font-size:42px;
+}
+
+/* NOTICE */
+
+.notice-box{
+max-width:850px;
+margin:auto;
+}
+
+.notice{
+background:white;
+padding:20px;
+margin-bottom:13px;
+border-radius:14px;
+box-shadow:0 4px 15px rgba(0,0,0,.06);
+}
+
+.notice strong{
+color:#071952;
+font-size:17px;
+}
+
+.notice p{
+margin-top:7px;
+color:#667085;
+line-height:1.6;
+}
+
+.notice-date{
+font-size:11px;
+color:#999;
+margin-top:10px;
+}
+
+/* GALLERY */
+
+.media-grid{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.media-card{
+background:white;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.media-card img,
+.media-card video{
+width:100%;
+display:block;
+max-height:320px;
+object-fit:cover;
+}
+
+.media-info{
+padding:17px;
+}
+
+.media-info h3{
+color:#071952;
+margin-bottom:7px;
+}
+
+.media-info p{
+color:#667085;
+font-size:14px;
+line-height:1.6;
+}
+
+/* PRINCIPAL */
+
+.admin{
+background:#071952;
+color:white;
+}
+
+.admin .section-title{
+color:white;
+}
+
+.admin-box{
+max-width:700px;
+margin:auto;
+background:white;
+color:#172033;
+padding:28px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.admin-box h3{
+color:#071952;
+margin-bottom:10px;
+}
+
+/* PASSWORD BOX */
+
+.password-box{
+position:relative;
+width:100%;
+}
+
+.password-box input{
+padding-right:85px;
+}
+
+.show-hide{
+position:absolute;
+right:8px;
+top:8px;
+height:42px;
+padding:0 12px;
+border:0;
+border-radius:8px;
+background:#eef2ff;
+color:#071952;
+font-weight:700;
+cursor:pointer;
+}
+
+.show-hide:active{
+transform:scale(.96);
+}
+
+input,
+textarea,
+select{
+width:100%;
+padding:13px;
+margin:7px 0 15px;
+border:1px solid #d0d5dd;
+border-radius:10px;
+font-family:inherit;
+font-size:14px;
+outline:none;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+border-color:#071952;
+}
+
+textarea{
+min-height:110px;
+resize:vertical;
+}
+
+.action{
+width:100%;
+padding:14px;
+border:0;
+border-radius:10px;
+background:#071952;
+color:white;
+font-weight:700;
+font-size:15px;
+cursor:pointer;
+}
+
+.action:active{
+transform:scale(.98);
+}
+
+.logout{
+background:#b42318;
+margin-top:20px;
+}
+
+#adminPanel{
+display:none;
+}
+
+.status{
+margin-top:12px;
+text-align:center;
+font-weight:600;
+font-size:14px;
+}
+
+.success{
+color:#07883d;
+}
+
+.error{
+color:#b42318;
+}
+
+.admin-item{
+background:#f2f4f7;
+padding:15px;
+margin-top:10px;
+border-radius:12px;
+}
+
+.admin-item strong{
+color:#071952;
+}
+
+.delete{
+background:#b42318;
+color:white;
+border:0;
+padding:8px 13px;
+border-radius:7px;
+margin-top:10px;
+cursor:pointer;
+}
+
+hr{
+border:0;
+border-top:1px solid #ddd;
+margin:28px 0;
+}
+
+/* CONTACT */
+
+.contact-card{
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#06132f;
+color:white;
+text-align:center;
+padding:30px 15px;
+}
+
+footer h2{
+font-family:"Playfair Display",serif;
+font-size:27px;
+}
+
+footer p{
+color:#c7d0df;
+font-size:13px;
+margin-top:7px;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+section{
+padding:50px 15px;
+}
+
+.hero{
+min-height:500px;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+.school-name{
+font-size:34px;
+}
+
+.admin-box{
+padding:20px;
+}
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<div class="school-name">
+Indian Progressive School
+</div>
+
+<div class="tagline">
+Knowledge • Discipline • Progress
+</div>
+
+</header>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="nav">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#academics">Academics</a>
+<a href="#notice">Notice</a>
+<a href="#gallery">Gallery</a>
+<a href="#principal">Principal</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>
+Welcome to<br>
+Indian Progressive School
+</h1>
+
+<p>
+A place where education,
+discipline, creativity and
+good values come together
+to build a brighter future.
+</p>
+
+<a href="#about" class="btn">
+Explore School
+</a>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 class="section-title">
+About Our School
+</h2>
+
+<div class="about">
+
+<p>
+Indian Progressive School is
+dedicated to providing quality
+education and creating a positive
+learning environment for students.
+
+Our aim is to encourage knowledge,
+confidence, discipline, creativity
+and good values in every student.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- ACADEMICS -->
+
+<section id="academics">
+
+<h2 class="section-title">
+Our Academics
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">📚</div>
+
+<h3>
+Quality Education
+</h3>
+
+<p>
+Focused learning with strong
+academic foundations and
+supportive teachers.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔬</div>
+
+<h3>
+Practical Learning
+</h3>
+
+<p>
+Learning through activities,
+experiments, projects and
+real-world examples.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎨</div>
+
+<h3>
+Creative Activities
+</h3>
+
+<p>
+Encouraging students to
+explore their creativity
+and talents.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚽</div>
+
+<h3>
+Sports & Fitness
+</h3>
+
+<p>
+Promoting teamwork,
+fitness and healthy
+activities.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- NOTICE -->
+
+<section id="notice">
+
+<h2 class="section-title">
+Notice Board
+</h2>
+
+<div
+class="notice-box"
+id="noticeList">
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">
+School Gallery
+</h2>
+
+<div
+class="media-grid"
+id="mediaList">
+</div>
+
+</section>
+
+
+<!-- PRINCIPAL -->
+
+<section class="admin" id="principal">
+
+<h2 class="section-title">
+Principal Panel
+</h2>
+
+
+<!-- LOGIN -->
+
+<div
+class="admin-box"
+id="loginBox">
+
+<h3>
+🔐 Principal Login
+</h3>
+
+<p style="
+color:#667085;
+font-size:13px;
+margin-bottom:15px;
+">
+
+Enter the Principal Key to
+manage school content.
+
+</p>
+
+
+<label>
+Principal Key
+</label>
+
+
+<div class="password-box">
+
+<input
+type="password"
+id="principalKey"
+placeholder="Enter Principal Key"
+autocomplete="off"
+>
+
+<button
+type="button"
+class="show-hide"
+id="showHideBtn"
+onclick="togglePassword()">
+
+Show
+
+</button>
+
+</div>
+
+
+<button
+class="action"
+onclick="principalLogin()">
+
+Login
+
+</button>
+
+
+<div
+class="status"
+id="loginStatus">
+</div>
+
+</div>
+
+
+<!-- ADMIN PANEL -->
+
+<div
+class="admin-box"
+id="adminPanel">
+
+
+<h3>
+📢 Add Notice / Information
+</h3>
+
+
+<label>
+Title
+</label>
+
+<input
+id="contentTitle"
+placeholder="Example: Annual Function"
+>
+
+
+<label>
+Information
+</label>
+
+<textarea
+id="contentDescription"
+placeholder="Write school information here..."
+></textarea>
+
+
+<label>
+Type
+</label>
+
+<select id="contentType">
+
+<option value="notice">
+Notice
+</option>
+
+<option value="info">
+Information
+</option>
+
+</select>
+
+
+<button
+class="action"
+onclick="addInformation()">
+
+Publish
+
+</button>
+
+
+<hr>
+
+
+<h3>
+📸 Add Photo / 🎥 Video
+</h3>
+
+
+<label>
+Select Photo / Video
+</label>
+
+<input
+type="file"
+id="mediaFile"
+accept="image/*,video/*"
+>
+
+
+<label>
+Title
+</label>
+
+<input
+id="mediaTitle"
+placeholder="Example: Independence Day"
+>
+
+
+<label>
+Description
+</label>
+
+<textarea
+id="mediaDescription"
+placeholder="Write description..."
+></textarea>
+
+
+<button
+class="action"
+onclick="addMedia()">
+
+Add Photo / Video
+
+</button>
+
+
+<div
+class="status"
+id="uploadStatus">
+</div>
+
+
+<hr>
+
+
+<h3>
+🗑️ Manage School Content
+</h3>
+
+
+<div
+id="adminContentList">
+</div>
+
+
+<button
+class="action logout"
+onclick="logoutPrincipal()">
+
+Logout
+
+</button>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+Contact Us
+</h2>
+
+<div class="cards">
+
+<div class="card contact-card">
+
+<div class="icon">
+📍
+</div>
+
+<h3>
+Address
+</h3>
+
+<p>
+School Address Here
+</p>
+
+</div>
+
+
+<div class="card contact-card">
+
+<div class="icon">
+📞
+</div>
+
+<h3>
+Phone
+</h3>
+
+<p>
++91 XXXXX XXXXX
+</p>
+
+</div>
+
+
+<div class="card contact-card">
+
+<div class="icon">
+✉️
+</div>
+
+<h3>
+Email
+</h3>
+
+<p>
+school@example.com
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h2>
+Indian Progressive School
+</h2>
+
+<p>
+Knowledge • Discipline • Progress
+</p>
+
+<p>
+© 2026 Indian Progressive School
+</p>
+
+</footer>
+
+
+<script>
+
+
+/* =========================================
+   PRINCIPAL KEY
+   ========================================= */
+
+const PRINCIPAL_KEY = "Sohel";
+
+
+/* =========================================
+   LOGIN STATUS
+   ========================================= */
+
+let isAdmin = false;
+
+
+/* =========================================
+   DATA
+   ========================================= */
+
+let notices =
+JSON.parse(
+localStorage.getItem("schoolNotices") || "[]"
+);
+
+let media =
+JSON.parse(
+localStorage.getItem("schoolMedia") || "[]"
+);
+
+
+/* =========================================
+   SHOW / HIDE PASSWORD
+   ========================================= */
+
+function togglePassword(){
+
+const input =
+document.getElementById(
+"principalKey"
+);
+
+const button =
+document.getElementById(
+"showHideBtn"
+);
+
+
+if(input.type === "password"){
+
+input.type = "text";
+
+button.innerText = "Hide";
+
+}else{
+
+input.type = "password";
+
+button.innerText = "Show";
+
+}
+
+}
+
+
+/* =========================================
+   LOGIN
+   ========================================= */
+
+function principalLogin(){
+
+const input =
+document.getElementById(
+"principalKey"
+);
+
+const status =
+document.getElementById(
+"loginStatus"
+);
+
+
+/*
+Remove accidental spaces
+from beginning/end.
+*/
+
+const enteredKey =
+input.value.trim();
+
+
+/*
+Check key
+*/
+
+if(enteredKey === PRINCIPAL_KEY){
+
+isAdmin = true;
+
+sessionStorage.setItem(
+"schoolAdmin",
+"true"
+);
+
+
+/* Hide login */
+
+document.getElementById(
+"loginBox"
+).style.display = "none";
+
+
+/* Show admin */
+
+document.getElementById(
+"adminPanel"
+).style.display = "block";
+
+
+status.className =
+"status success";
+
+status.innerHTML =
+"✅ Login successful!";
+
+
+loadAdminContent();
+
+}else{
+
+isAdmin = false;
+
+status.className =
+"status error";
+
+status.innerHTML =
+"❌ Wrong Principal Key.";
+
+}
+
+}
+
+
+/* =========================================
+   ENTER KEY LOGIN
+   ========================================= */
+
+document
+.getElementById("principalKey")
+.addEventListener(
+"keydown",
+function(event){
+
+if(event.key === "Enter"){
+
+principalLogin();
+
+}
+
+});
+
+
+/* =========================================
+   AUTO LOGIN
+   ========================================= */
+
+if(
+sessionStorage.getItem(
+"schoolAdmin"
+) === "true"
+){
+
+isAdmin = true;
+
+document.getElementById(
+"loginBox"
+).style.display = "none";
+
+document.getElementById(
+"adminPanel"
+).style.display = "block";
+
+}
+
+
+/* =========================================
+   LOGOUT
+   ========================================= */
+
+function logoutPrincipal(){
+
+isAdmin = false;
+
+sessionStorage.removeItem(
+"schoolAdmin"
+);
+
+document.getElementById(
+"loginBox"
+).style.display = "block";
+
+document.getElementById(
+"adminPanel"
+).style.display = "none";
+
+document.getElementById(
+"principalKey"
+).value = "";
+
+document.getElementById(
+"principalKey"
+).type = "password";
+
+document.getElementById(
+"showHideBtn"
+).innerText = "Show";
+
+document.getElementById(
+"loginStatus"
+).innerHTML = "";
+
+}
+
+
+/* =========================================
+   ADD INFORMATION
+   ========================================= */
+
+function addInformation(){
+
+if(!isAdmin){
+
+alert("Please login first.");
+
+return;
+
+}
+
+
+const title =
+document.getElementById(
+"contentTitle"
+).value.trim();
+
+
+const description =
+document.getElementById(
+"contentDescription"
+).value.trim();
+
+
+const type =
+document.getElementById(
+"contentType"
+).value;
+
+
+if(!title || !description){
+
+alert(
+"Please fill all fields."
+);
+
+return;
+
+}
+
+
+const item = {
+
+id: Date.now(),
+
+title: title,
+
+description: description,
+
+type: type,
+
+date:
+new Date().toLocaleDateString(
+"en-IN"
+)
+
+};
+
+
+notices.unshift(item);
+
+
+localStorage.setItem(
+"schoolNotices",
+JSON.stringify(notices)
+);
+
+
+document.getElementById(
+"contentTitle"
+).value = "";
+
+document.getElementById(
+"contentDescription"
+).value = "";
+
+
+alert(
+"✅ Published successfully!"
+);
+
+
+displayNotices();
+
+loadAdminContent();
+
+}
+
+
+/* =========================================
+   ADD MEDIA
+   ========================================= */
+
+function addMedia(){
+
+if(!isAdmin){
+
+alert(
+"Please login first."
+);
+
+return;
+
+}
+
+
+const file =
+document.getElementById(
+"mediaFile"
+).files[0];
+
+
+const title =
+document.getElementById(
+"mediaTitle"
+).value.trim();
+
+
+const description =
+document.getElementById(
+"mediaDescription"
+).value.trim();
+
+
+const status =
+document.getElementById(
+"uploadStatus"
+);
+
+
+if(!file){
+
+status.className =
+"status error";
+
+status.innerHTML =
+"❌ Please select a photo or video.";
+
+return;
+
+}
+
+
+if(!title){
+
+status.className =
+"status error";
+
+status.innerHTML =
+"❌ Please enter a title.";
+
+return;
+
+}
+
+
+/*
+Temporary browser version.
+*/
+
+if(file.size > 5 * 1024 * 1024){
+
+status.className =
+"status error";
+
+status.innerHTML =
+"❌ Please use a file smaller than 5 MB.";
+
+return;
+
+}
+
+
+status.className =
+"status";
+
+status.innerHTML =
+"⏳ Uploading...";
+
+
+const reader =
+new FileReader();
+
+
+reader.onload = function(e){
+
+const item = {
+
+id: Date.now(),
+
+title: title,
+
+description: description,
+
+type:
+file.type.startsWith("video/")
+? "video"
+: "image",
+
+src: e.target.result,
+
+date:
+new Date().toLocaleDateString(
+"en-IN"
+)
+
+};
+
+
+media.unshift(item);
+
+
+try{
+
+localStorage.setItem(
+"schoolMedia",
+JSON.stringify(media)
+);
+
+
+status.className =
+"status success";
+
+status.innerHTML =
+"✅ Added successfully!";
+
+
+document.getElementById(
+"mediaFile"
+).value = "";
+
+document.getElementById(
+"mediaTitle"
+).value = "";
+
+document.getElementById(
+"mediaDescription"
+).value = "";
+
+
+displayMedia();
+
+loadAdminContent();
+
+
+}catch(error){
+
+status.className =
+"status error";
+
+status.innerHTML =
+"❌ Browser storage full.";
+
+}
+
+};
+
+
+reader.readAsDataURL(file);
+
+}
+
+
+/* =========================================
+   DISPLAY NOTICES
+   ========================================= */
+
+function displayNotices(){
+
+const box =
+document.getElementById(
+"noticeList"
+);
+
+box.innerHTML = "";
+
+
+if(notices.length === 0){
+
+box.innerHTML = `
+
+<div class="notice">
+
+<strong>
+No notices available
+</strong>
+
+<p>
+School notices will appear here.
+</p>
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+notices.forEach(item => {
+
+const div =
+document.createElement("div");
+
+div.className = "notice";
+
+
+div.innerHTML = `
+
+<strong>
+${escapeHTML(item.title)}
+</strong>
+
+<p>
+${escapeHTML(item.description)}
+</p>
+
+<div class="notice-date">
+📅 ${item.date}
+</div>
+
+`;
+
+
+box.appendChild(div);
+
+});
+
+}
+
+
+/* =========================================
+   DISPLAY MEDIA
+   ========================================= */
+
+function displayMedia(){
+
+const box =
+document.getElementById(
+"mediaList"
+);
+
+box.innerHTML = "";
+
+
+if(media.length === 0){
+
+box.innerHTML = `
+
+<div class="card">
+
+<h3>
+School Gallery
+</h3>
+
+<p>
+Photos and videos will appear here.
+</p>
+
+</div>
+
+`;
+
+return;
+
+}
+
+
+media.forEach(item => {
+
+const card =
+document.createElement("div");
+
+card.className =
+"media-card";
+
+
+let mediaHTML = "";
+
+
+if(item.type === "video"){
+
+mediaHTML = `
+
+<video
+src="${item.src}"
+controls
+playsinline>
+</video>
+
+`;
+
+}else{
+
+mediaHTML = `
+
+<img
+src="${item.src}"
+alt="${escapeHTML(item.title)}"
+loading="lazy">
+
+`;
+
+}
+
+
+card.innerHTML =
+
+mediaHTML +
+
+`
+
+<div class="media-info">
+
+<h3>
+${escapeHTML(item.title)}
+</h3>
+
+<p>
+${escapeHTML(item.description)}
+</p>
+
+</div>
+
+`;
+
+
+box.appendChild(card);
+
+});
+
+}
+
+
+/* =========================================
+   ADMIN CONTENT
+   ========================================= */
+
+function loadAdminContent(){
+
+const box =
+document.getElementById(
+"adminContentList"
+);
+
+box.innerHTML = "";
+
+
+if(
+notices.length === 0 &&
+media.length === 0
+){
+
+box.innerHTML = `
+
+<p style="
+color:#667085;
+text-align:center;
+padding:15px;
+">
+
+No content added yet.
+
+</p>
+
+`;
+
+return;
+
+}
+
+
+/* NOTICES */
+
+notices.forEach(item => {
+
+const div =
+document.createElement("div");
+
+div.className =
+"admin-item";
+
+
+div.innerHTML = `
+
+<strong>
+📢 ${escapeHTML(item.title)}
+</strong>
+
+<br>
+
+<small>
+${item.type} • ${item.date}
+</small>
+
+<br>
+
+<button
+class="delete"
+onclick="deleteNotice(${item.id})">
+
+Delete
+
+</button>
+
+`;
+
+
+box.appendChild(div);
+
+});
+
+
+/* MEDIA */
+
+media.forEach(item => {
+
+const div =
+document.createElement("div");
+
+div.className =
+"admin-item";
+
+
+div.innerHTML = `
+
+<strong>
+${item.type === "video" ? "🎥" : "📸"}
+${escapeHTML(item.title)}
+</strong>
+
+<br>
+
+<small>
+${item.date}
+</small>
+
+<br>
+
+<button
+class="delete"
+onclick="deleteMedia(${item.id})">
+
+Delete
+
+</button>
+
+`;
+
+
+box.appendChild(div);
+
+});
+
+}
+
+
+/* =========================================
+   DELETE NOTICE
+   ========================================= */
+
+function deleteNotice(id){
+
+if(!confirm(
+"Delete this notice?"
+)){
+
+return;
+
+}
+
+
+notices =
+notices.filter(
+item => item.id !== id
+);
+
+
+localStorage.setItem(
+"schoolNotices",
+JSON.stringify(notices)
+);
+
+
+displayNotices();
+
+loadAdminContent();
+
+}
+
+
+/* =========================================
+   DELETE MEDIA
+   ========================================= */
+
+function deleteMedia(id){
+
+if(!confirm(
+"Delete this photo/video?"
+)){
+
+return;
+
+}
+
+
+media =
+media.filter(
+item => item.id !== id
+);
+
+
+localStorage.setItem(
+"schoolMedia",
+JSON.stringify(media)
+);
+
+
+displayMedia();
+
+loadAdminContent();
+
+}
+
+
+/* =========================================
+   TEXT SECURITY
+   ========================================= */
+
+function escapeHTML(text){
+
+return String(text)
+
+.replace(/&/g,"&amp;")
+
+.replace(/</g,"&lt;")
+
+.replace(/>/g,"&gt;")
+
+.replace(/"/g,"&quot;")
+
+.replace(/'/g,"&#039;");
+
+}
+
+
+/* =========================================
+   START
+   ========================================= */
+
+displayNotices();
+
+displayMedia();
+
+if(
+sessionStorage.getItem(
+"schoolAdmin"
+) === "true"
+){
+
+loadAdminContent();
+
+}
+
+</script>
+
+</body>
+</html>
